@@ -19,6 +19,12 @@ export interface WorkspaceValidationReport {
   errors: Record<string, string[]>;
 }
 
+export interface OutputBundleValidationResult {
+  isValid: boolean;
+  htmlFile: string | null;
+  errors: string[];
+}
+
 interface PatternRule {
   label: string;
   patterns: RegExp[];
@@ -288,6 +294,56 @@ export function validateWorkspace(rootDir: string): WorkspaceValidationReport {
     isValid: Object.keys(errors).length === 0,
     checkedFiles,
     totalTemplates,
+    errors,
+  };
+}
+
+/**
+ * Valida que una subcarpeta de cartel en `output/<nombre>/` sea un bundle autónomo válido.
+ */
+export function validateOutputBundle(bundleDir: string): OutputBundleValidationResult {
+  const errors: string[] = [];
+  if (!fs.existsSync(bundleDir) || !fs.statSync(bundleDir).isDirectory()) {
+    return {
+      isValid: false,
+      htmlFile: null,
+      errors: [`El directorio no existe: ${bundleDir}`],
+    };
+  }
+
+  const entries = fs.readdirSync(bundleDir);
+  const htmlFiles = entries.filter((f) => f.endsWith('.html'));
+
+  if (htmlFiles.length === 0) {
+    return {
+      isValid: false,
+      htmlFile: null,
+      errors: ['No se encontró ningún archivo .html en el bundle.'],
+    };
+  }
+
+  const mainHtml = htmlFiles.includes('index.html') ? 'index.html' : htmlFiles[0];
+  const htmlContent = fs.readFileSync(path.join(bundleDir, mainHtml), 'utf8');
+
+  // Verifica referencias locales a src="..." o href="..."
+  const localRefRegex = /(?:src|href)=["']([^"':]+)["']/gi;
+  let match: RegExpExecArray | null;
+
+  while ((match = localRefRegex.exec(htmlContent)) !== null) {
+    const ref = match[1].trim();
+    if (ref.startsWith('#') || ref.startsWith('data:') || ref.startsWith('http://') || ref.startsWith('https://')) {
+      continue;
+    }
+    const cleanRef = ref.split('?')[0].split('#')[0];
+    const targetPath = path.join(bundleDir, cleanRef);
+    if (!fs.existsSync(targetPath)) {
+      errors.push(`Recurso local no encontrado en el bundle: ${cleanRef}`);
+    }
+  }
+
+  return {
+    isValid: errors.length === 0,
+    htmlFile: mainHtml,
     errors,
   };
 }

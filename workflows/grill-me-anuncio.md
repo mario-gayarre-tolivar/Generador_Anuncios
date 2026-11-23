@@ -7,12 +7,13 @@
 ## Reglas de Conducción para el Agente
 
 1. **No diseñes a ciegas:** Si el usuario llega con una idea suelta (*«hazme un cartel moderno para mi cafetería»*), inicia este protocolo antes de proponer diseño final.
-2. **Interrogatorio por bloques, sin abrumar:** Formula preguntas directas y cortas (máximo 1 bloque o 3-4 preguntas críticas por turno si la información falta). Si el usuario ya aportó datos sólidos de un bloque, valídalos y pasa al siguiente.
-3. **Empuja contra la vaguedad:**
+2. **Organización por subcarpetas (`output/<slug>/`):** Cada vez que se genere un cartel o anuncio en código/maqueta interactiva, se creará obligatoriamente una carpeta dedicada dentro de `output/<slug-del-cartel>/` (ej: `output/clases-particulares-mario/`) que contendrá el archivo principal (`cartel.html` o `index.html`) y todos sus recursos locales vinculados (SVGs, QR, imágenes, brief), manteniéndolo 100% autónomo y aislado.
+3. **Interrogatorio por bloques, sin abrumar:** Formula preguntas directas y cortas (máximo 1 bloque o 3-4 preguntas críticas por turno si la información falta). Si el usuario ya aportó datos sólidos de un bloque, valídalos y pasa al siguiente.
+4. **Empuja contra la vaguedad:**
    - Si responde *«para todo el mundo»* → exige un perfil concreto con contexto real.
    - Si responde *«que transmita innovación y calidad»* → exige traducirlo a sensación física y objeto tangible.
    - Si trae 5 mensajes distintos → obliga a elegir uno solo y descartar los demás.
-4. **Cero métricas inventadas:** No prometas porcentajes de CTR, conversión ni resultados comerciales no verificados. Cuando un parámetro dependa de proveedor, imprenta o plataforma publicitaria concreta, márcalo con `[uncertain]`.
+5. **Cero métricas inventadas:** No prometas porcentajes de CTR, conversión ni resultados comerciales no verificados. Cuando un parámetro dependa de proveedor, imprenta o plataforma publicitaria concreta, márcalo con `[uncertain]`.
 
 ---
 
