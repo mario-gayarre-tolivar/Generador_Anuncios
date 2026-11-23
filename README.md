@@ -36,8 +36,12 @@ Generador_Anuncios/
 │   ├── tecnologia/catalogo-plantillas.md
 │   ├── causas-sociales/catalogo-plantillas.md
 │   └── lanzamientos/catalogo-plantillas.md
+├── output/                                        # Entregables generados (aislado e ignorado en Git)
+│   └── <slug-del-cartel>/                         # Subcarpeta dedicada por cartel (ej: clases-particulares-mario/)
+│       ├── cartel.html                            # Maqueta HTML interactiva imprimible A4 / adaptable 4:5
+│       └── [recursos locales]                     # SVGs, QRs, imágenes o brief asociado
 ├── src/
-│   └── validator.ts                               # Motor de validación de contratos documentales
+│   └── validator.ts                               # Motor de validación de contratos documentales y bundles
 ├── tests/
 │   └── validator.test.ts                          # Suite TDD de auditoría estructural y anti-IA
 └── docs/

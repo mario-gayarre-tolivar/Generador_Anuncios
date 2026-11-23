@@ -5,6 +5,7 @@ import { afterEach, describe, expect, it } from 'vitest';
 import {
   validateCoreRulesAndWorkflow,
   validateFormatSpec,
+  validateOutputBundle,
   validatePatternSpec,
   validateTemplateCatalog,
   validateWorkspace,
@@ -272,5 +273,56 @@ describe('Ciclo 4: validateWorkspace', () => {
     expect(report.isValid).toBe(true);
     expect(report.checkedFiles).toBe(21);
     expect(report.totalTemplates).toBeGreaterThanOrEqual(21);
+  });
+});
+
+describe('Ciclo 5: validateOutputBundle', () => {
+  const tempDirs: string[] = [];
+
+  afterEach(() => {
+    for (const dir of tempDirs.splice(0)) {
+      fs.rmSync(dir, { recursive: true, force: true });
+    }
+  });
+
+  function createTempBundle(): string {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'bundle-anuncio-'));
+    tempDirs.push(dir);
+    return dir;
+  }
+
+  it('acepta un bundle con archivo HTML principal y sus recursos locales referenciados', () => {
+    const bundleDir = createTempBundle();
+    fs.writeFileSync(path.join(bundleDir, 'qr-whatsapp.svg'), '<svg></svg>', 'utf8');
+    fs.writeFileSync(
+      path.join(bundleDir, 'cartel.html'),
+      '<!DOCTYPE html><html><body><img src="qr-whatsapp.svg" /></body></html>',
+      'utf8',
+    );
+
+    const result = validateOutputBundle(bundleDir);
+
+    expect(result.isValid).toBe(true);
+    expect(result.errors).toEqual([]);
+    expect(result.htmlFile).toBe('cartel.html');
+  });
+
+  it('rechaza si el bundle no contiene ningún archivo HTML', () => {
+    const bundleDir = createTempBundle();
+    fs.writeFileSync(path.join(bundleDir, 'notas.txt'), 'hola', 'utf8');
+
+    const result = validateOutputBundle(bundleDir);
+
+    expect(result.isValid).toBe(false);
+    expect(result.errors.length).toBeGreaterThan(0);
+  });
+
+  it('valida exitosamente el bundle real migrado output/clases-particulares-mario', () => {
+    const marioBundle = path.join(process.cwd(), 'output', 'clases-particulares-mario');
+    const result = validateOutputBundle(marioBundle);
+
+    expect(result.isValid).toBe(true);
+    expect(result.htmlFile).toBe('cartel-mario.html');
+    expect(result.errors).toEqual([]);
   });
 });
