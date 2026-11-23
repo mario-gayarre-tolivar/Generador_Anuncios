@@ -1,0 +1,85 @@
+# Catálogo de Plantillas por Sector: Lanzamientos
+
+Plantillas de dirección de arte para pre-lanzamientos, teasers, aperturas de tienda o servicio, ediciones limitadas y renovaciones de marca/producto. El criterio anti-IA evita el despliegue gratuito de destellos cinematográficos, humo artificial de neón y frases vacías de *hype* (*«prepárate para lo nunca visto»*), apostando por intriga física, monumentalidad tipográfica, numeración tangible y contraste material real.
+
+> **Nota técnica:** Todos los formatos remiten a [formats/_index.md](../../formats/_index.md). Cualquier medida de sangrado, perfil CMYK o margen de interfaz sujeta a imprenta, proveedor o plataforma incluye `[uncertain]`.
+
+---
+
+### Plantilla 1: Teaser de Silueta / Detalle Parcial sin Desvelar Todo
+
+- **Nombre**: Teaser de Silueta / Detalle Parcial sin Desvelar Todo
+- **Ideal para**: Campañas de expectación previas a la revelación pública de `[PRODUCT NAME]` (un objeto industrial, prenda, libro, espacio físico o colección) dirigidas a `[AUDIENCE]` curioso o seguidor inicial que disfruta descifrando pistas reales antes del lanzamiento.
+- **Dimensiones recomendadas**: `9:16 Stories / Reels (1080 x 1920 px)` (`250 px` sup., `380–420 px` inf., `140 px` der. libres `[uncertain]`, `0 mm` sangrado); `4:5 Redes (1080 x 1350 px)`; `MUPI 120 x 175 cm` (`72–150 DPI` `[uncertain]`, `40–60 mm` margen) y `A3 Cartel Escaparate (297 x 420 mm, 300 DPI, 3–5 mm sangrado [uncertain])`.
+- **Retícula y foco**: `1 foco principal` basado en un recorte fotográfico extremo (máximo un 20–30% del producto visible: una costura, una arista en sombra, una etiqueta textil doblada, el borde de una lente o un contorno tras vidrio traslúcido real) anclado a un borde o esquina del lienzo. Retícula de tercios con gran zona oscura o mineral continua. Máximo 3 niveles de jerarquía: **Nivel 1** (detalle parcial iluminado con luz direccional real + frase corta de intriga en 2–5 palabras), **Nivel 2** (fecha exacta o coordenada de revelación de `[PRODUCT NAME]`), **Nivel 3** (marca sutil o enlace de aviso sin gritar).
+- **Regla anti-IA clave**: Prohibido cubrir el objeto con sábanas de seda 3D brillantes, humo violeta de estudio sintético, destellos de lente (*lens flare*) o siluetas perfectamente centradas con halo retroiluminado artificial. La ocultación debe ocurrir por **encuadre fotográfico real** (fuera de cuadro o bajo sombra dura física) o material físico real (papel vegetal, cristal esmerilado auténtico, penumbra real de estudio).
+- **Guía de color y contraste**: Paleta de penumbra matérica o luz rasante natural: negros profundos matizados (`#141516` o carbón cálido `#1A1817`, nunca `#000000` absoluto), tonos piedra/bruma (`#76736E`) y tipografía en hueso mate (`#ECE8DF`) o tinta cobre apagada (`#B5734A`). Prohibidos los brillos metálicos falsos y degradados azul-magenta. Ratio de contraste mínimo `≥ 4.5:1` en la fecha y `≥ 3:1` en titular (`[uncertain]` según soporte impreso o pantalla).
+- **Tono de copy y voz**: Contenido, enigmático sin cursilería y específico en la pista material, fiel a `[TONE]` y `[BRAND VOICE]`. Prohibido usar *«algo grande está por llegar»* o *«próximamente la revolución»*. Dar una pista tangible que solo entienda `[AUDIENCE]`.
+- **Ejemplo de uso y prompt base**:
+  > Producto: `[PRODUCT NAME]` | Audiencia: `[AUDIENCE]` | Tono: `[TONE]` | Voz: `[BRAND VOICE]`
+  >
+  > **Dirección de arte (9:16 Stories / MUPI):** Lienzo oscuro en carbón mate (`#171716`). Solo en el tercio superior derecho, sangrando fuera del borde, fotografía macro real con óptica de 85 mm mostrando el borde curvado y una costura o junta metálica de `[PRODUCT NAME]` tocada por una única línea estrecha de luz solar rasante de persiana; el resto del objeto permanece en penumbra natural sin contorno luminoso falso. En la zona segura inferior izquierda: Nivel 1 titular en serif sobria (`#ECE8DF`): *«Cuatro años probando una sola bisagra.»* Nivel 2 (`#B5734A` en tracking amplio): *«[PRODUCT NAME] · Se abre el 12 de noviembre»*. Nivel 3 discreto abajo: *«Lista de aviso temprano →»* con `[TONE]` y `[BRAND VOICE]` para `[AUDIENCE]`.
+  >
+  > **Prompt visual base (referencia fotográfica sin texto):**
+  > `Extreme macro teaser photograph showing only the corner edge and stitched seam of an industrial matte object emerging in the upper right frame, narrow strip of natural afternoon window sunlight slicing across dark warm charcoal shadow, genuine surface grain and shallow depth of field on 85mm lens, vast quiet dark space on lower left, no neon rim light.`
+  > **Negativos anti-IA:** `floating 3d silk cloth reveal, purple smoke, glowing outline silhouette, lens flare, volumetric god rays, centered glowing object, HDR reflection, futuristic laser grid, cyberpunk dark background, gibberish text.` *(La sensibilidad a negativos varía según motor `[uncertain]`).*
+
+---
+
+### Plantilla 2: Fecha como Monumento Tipográfico
+
+- **Nombre**: Fecha como Monumento Tipográfico
+- **Ideal para**: Aperturas de sede física, estrenos de temporada, lanzamientos globales en fecha cerrada o hitos de calendario de `[PRODUCT NAME]` dirigidos a `[AUDIENCE]` que debe recordar un día y una hora exactos en menos de 2 segundos desde la calle o el scroll rápido.
+- **Dimensiones recomendadas**: `Valla 8 x 3 m` (`30–72 DPI` a `1:1` o `1:10` a `300–500 DPI` `[uncertain]`, `100–150 mm` margen); `MUPI 120 x 175 cm` (`40–60 mm` margen); `B2 / A2 Cartel (300 DPI, 3–5 mm sangrado [uncertain])` y `4:5 Redes (1080 x 1350 px)`.
+- **Retícula y foco**: `1 foco principal` estrictamente tipográfico: los dígitos de la fecha o el mes/día actúan como arquitectura visual principal ocupando hasta el 75% de la altura o anchura útil, rompiendo el eje con desplazamiento asimétrico o corte intencional controlado en uno de los márgenes de la caja tipográfica (respetando siempre margen de seguridad de lectura). Retícula suiza de 4 columnas con filetes estructurales finos. Máximo 3 niveles de jerarquía: **Nivel 1** (la fecha monumental como icono visual), **Nivel 2** (qué ocurre ese día con `[PRODUCT NAME]` y dónde en una línea), **Nivel 3** (marca y acción de registro/asistencia).
+- **Regla anti-IA clave**: Prohibido rellenar los números con texturas 3D de cromo líquido, fuego, flores generadas o fondos de degradado dinámico. Los dígitos deben imprimirse con tinta plana de imprenta o fotografía real de caracteres físicos (sellos de goma, letras de taller, impresión tipográfica sobre cartulina) sin efectos de bisel digital ni sombras paralelas sintéticas.
+- **Guía de color y contraste**: Paleta binaria de cartel clásico de alta legibilidad: tinta bermellón mate (`#C23B26`) o azul ultramar (`#1B3C73`) sobre papel crema cálido (`#F3EFE6`), o tinta hueso (`#F3EFE6`) sobre verde botella oscuro (`#183026`). Prohibido el contraste flúor o negros digitales `#000000` sin matiz. Garantizar contraste `≥ 4.5:1` en Nivel 2 y 3 (`[uncertain]` en vallas con luz solar rasante).
+- **Tono de copy y voz**: Directo, seguro y telegráfico, adaptado a `[TONE]` y `[BRAND VOICE]`. Prohibido el relleno poético innecesario alrededor de una fecha que ya es noticia. La concisión demuestra autoridad frente a `[AUDIENCE]`.
+- **Ejemplo de uso y prompt base**:
+  > Producto: `[PRODUCT NAME]` | Audiencia: `[AUDIENCE]` | Tono: `[TONE]` | Voz: `[BRAND VOICE]`
+  >
+  > **Dirección de arte (B2 Cartel / Valla / 4:5 Feed):** Fondo crema cálido mate (`#F3EFE6`) con leve grano de papel sin estucar. Nivel 1 monumental en columnas 1–3, alineado a izquierda en tipografía Grotesca muy pesada color bermellón mate (`#C23B26`), dejando la columna 4 completamente vacía como contrapeso: *«18.10»* con interlineado negativo controlado y corte limpio contra un filete horizontal negro carbón (`#181817`). Debajo del filete, en columna 2–4: Nivel 2 en cuerpo legible (`#181817`): *«Abre la primera tienda-taller de [PRODUCT NAME] en Valencia.»* Nivel 3 al pie en columna 4: *«10:00 h · C/ Colón, 42 · [PRODUCT NAME]»* con `[TONE]` y `[BRAND VOICE]` pensados para `[AUDIENCE]`.
+  >
+  > **Prompt visual base (referencia tipográfica/papel sin texto complejo):**
+  > `Minimalist Swiss graphic design poster background on matte warm off-white cotton paper stock, subtle real letterpress ink grain and crisp horizontal charcoal divider rule, vast asymmetrical negative space on the right, flat vermilion solid ink aesthetic, no 3d bevels, no gradients.`
+  > **Negativos anti-IA:** `liquid chrome 3d numbers, glowing neon numerals, fireworks background, volumetric rays, glossy plastic text, centered symmetrical layout, gradient mesh, confetti 3d, stock celebration crowd, gibberish text.` *(Sensibilidad dependiente del motor `[uncertain]`).*
+
+---
+
+### Plantilla 3: Edición Numerada / Drop Artesanal en Collage
+
+- **Nombre**: Edición Numerada / Drop Artesanal en Collage
+- **Ideal para**: Tiradas limitadas, colaboraciones cápsula, preventas numeradas o lanzamientos independientes de `[PRODUCT NAME]` orientados a `[AUDIENCE]` coleccionista o amante del detalle físico que valora la escasez real verificable y el trabajo manual.
+- **Dimensiones recomendadas**: `4:5 Redes (1080 x 1350 px)` y `1:1 Carrusel (1080 x 1080 px)` (`64–72 px` margen interno, `0 mm` sangrado); `A5 / A4 Postal o Inserto Editorial (300 DPI, 3 mm sangrado, 5–8 mm margen seguridad)`; `A3 Cartel (300 DPI, 3–5 mm sangrado [uncertain])`.
+- **Retícula y foco**: `1 foco principal` resuelto como collage físico escaneado en cama plana: una fotografía impresa del producto o muestra de material pegada ligeramente torcida (`2–4°`) con cinta de carrocero real, un ticket o sello numerado a mano (`N.º 001 / 250` `[uncertain]`) y un recorte de etiqueta física con sombra real de contacto de escáner. Retícula libre controlada sobre mesa o cartulina base con 35–40% de margen limpio. Máximo 3 niveles de jerarquía: **Nivel 1** (composición táctil del collage + nombre del drop), **Nivel 2** (tirada exacta, material o fecha de cierre de `[PRODUCT NAME]`), **Nivel 3** (enlace o punto de reserva).
+- **Regla anti-IA clave**: Prohibidos los collages digitales estériles con bordes perfectamente vectorizados, sombras paralelas artificiales idénticas (`box-shadow` digital) o pegatinas 3D brillantes tipo emoji. Todo recorte debe mostrar fibra de papel rasgado o guillotinado real, textura de cinta adhesiva translúcida verdadera, ligero grano de escáner y variación orgánica de densidad de tinta.
+- **Guía de color y contraste**: Paleta de archivo y papelería real: base cartulina gris piedra (`#DEDAD2`) o kraft claro (`#D9CBB5`), fotografía a color natural sin hiper-saturación, papel de notas blanco hueso (`#F5F2EB`) con tinta negro tampón (`#1B1A19`) y rojo sello (`#A93226`). Prohibidos los neones y los colores pastel plásticos. Contraste mínimo `≥ 4.5:1` en los bloques legibles (`[uncertain]` sobre papel kraft oscuro).
+- **Tono de copy y voz**: Auténtico, de taller y directo, sintonizado con `[TONE]` y `[BRAND VOICE]`. Prohibida la falsa urgencia agresiva de marketing (*«¡ÚLTIMAS HORAS! ¡NO TE QUEDES FUERA!»*). Explicar con honestidad por qué la tirada de `[PRODUCT NAME]` es limitada (lote de tejido, capacidad de taller, edición firmada) para `[AUDIENCE]`.
+- **Ejemplo de uso y prompt base**:
+  > Producto: `[PRODUCT NAME]` | Audiencia: `[AUDIENCE]` | Tono: `[TONE]` | Voz: `[BRAND VOICE]`
+  >
+  > **Dirección de arte (4:5 Feed / A4 Editorial):** Escáner real en cama plana sobre cartulina gris piedra (`#DEDAD2`). En el centro-izquierda ligeramente inclinado (`3°`), recorte fotográfico impreso en papel mate de `[PRODUCT NAME]` sujetado en dos esquinas con trozos cortos de cinta masking tape beige y una etiqueta real de archivo timbrada en rojo (`#A93226`) con numeración física. En la banda derecha despejada sobre papel hueso superpuesto: Nivel 1 en tipografía máquina de escribir / grotesca (`#1B1A19`): *«Primer lote de taller. 150 unidades.»* `[uncertain]`. Nivel 2 (`#3E3C38`): *«[PRODUCT NAME] en lona encerada y latón · Sin reposición hasta primavera.»* Nivel 3 al pie con flecha simple: *«Reserva unidad numerada →»* redactado con `[TONE]` y `[BRAND VOICE]` para `[AUDIENCE]`.
+  >
+  > **Prompt visual base (referencia de collage físico sin texto complejo):**
+  > `Flatbed scanner physical collage on matte warm gray cardstock, slightly tilted matte printed photograph swatch taped with real torn beige masking tape, small kraft paper tag with faint red rubber stamp ink texture, real thin paper edge contact shadows, natural dust specks and paper grain, zero digital glow.`
+  > **Negativos anti-IA:** `3d sticker pack, glossy plastic tape, artificial drop shadow, neon gradient background, symmetrical collage, holographic foil 3d effect, vector memphis shapes, hyper-saturated colors, gibberish text.` *(Sensibilidad variable por motor `[uncertain]`).*
+
+---
+
+### Plantilla 4: Cambio de Era / Antes vs. Ahora con Materia Real
+
+- **Nombre**: Cambio de Era / Antes vs. Ahora con Materia Real
+- **Ideal para**: Relanzamientos, segundas generaciones de producto, sustituciones de modelo antiguo o migración de plataforma/formato de `[PRODUCT NAME]` dirigidos a `[AUDIENCE]` que ya conoce el problema anterior y necesita ver de un vistazo la mejora concreta sin promesas vagas.
+- **Dimensiones recomendadas**: `1.91:1 Link Ad / LinkedIn (1200 x 628 px)` y `Web Hero 1920 x 1080 px` (`0 mm` sangrado, contenedor seguro `1140–1200 px`); `4:5 Carrusel o Feed (1080 x 1350 px)`; `A3 Díptico/Cartel (300 DPI, 3–5 mm sangrado [uncertain])` y `IAB 970 x 250 px` (`24–36 px` margen).
+- **Retícula y foco**: `1 foco principal` basado en una comparación asimétrica real (nunca 50/50 simétrico estático, sino proporción `35/65` o `30/70`) que muestra la materia física del problema antiguo frente a la solución nueva sobre la misma mesa y bajo la misma luz (ej. un manojo de cables enredados frente a un conector único limpio; tres manuales gruesos desgastados frente a una sola lámina precisa). Máximo 3 niveles de jerarquía: **Nivel 1** (escena comparativa asimétrica + titular breve que nombra el cambio), **Nivel 2** (dato medible real de mejora de `[PRODUCT NAME]`, sin inventar métricas), **Nivel 3** (CTA directo y marca).
+- **Regla anti-IA clave**: Prohibidas las pantallas partidas verticalmente al 50% con un rayo azul separando «pasado gris triste» de «futuro neón brillante con cohetes». Ambas partes deben compartir el mismo entorno físico real, la misma iluminación natural lateral y un contraste real honesto donde la diferencia sea funcional y material, no un truco de filtro de color.
+- **Guía de color y contraste**: Paleta coherente en todo el plano: mesa o fondo neutro continuo en piedra cálida (`#E6E2DA`) o madera clara cepillada, texto en carbón (`#171716`) y reserva limpia o acento azul petróleo (`#1D4D5F`) solo en la etiqueta del estado actual. Prohibidos los filtros desaturados artificiales en el «antes» combinados con saturación HDR en el «después». Contraste mínimo `≥ 4.5:1` (`[uncertain]` según soporte).
+- **Tono de copy y voz**: Honesto, práctico y comparativo sin exageración publicitaria, manteniendo `[TONE]` y `[BRAND VOICE]`. Prohibido afirmar *«revoluciona para siempre lo que conocías»*. Explicar a `[AUDIENCE]` qué pieza sobra ahora gracias a `[PRODUCT NAME]` y qué gana en su lugar.
+- **Ejemplo de uso y prompt base**:
+  > Producto: `[PRODUCT NAME]` | Audiencia: `[AUDIENCE]` | Tono: `[TONE]` | Voz: `[BRAND VOICE]`
+  >
+  > **Dirección de arte (1.91:1 Link Ad / 970 x 250 px Billboard / Web Hero):** Plano horizontal asimétrico sobre una mesa real de taller en madera clara con luz natural lateral de ventana izquierda. En el tercio izquierdo (30%), un conjunto real de tres adaptadores viejos y cables gastados con etiquetas arrugadas; en los dos tercios derechos (70%) con aire amplio, la nueva unidad limpia de `[PRODUCT NAME]` ocupando un tercio del espacio anterior. Arriba a la derecha en zona despejada: Nivel 1 titular en Grotesca nítida (`#171716`): *«Tres cajas menos en la mochila.»* Nivel 2 (`#3A3D40`): *«La segunda generación de [PRODUCT NAME] integra fuente, puente y salida en 180 g.»* Nivel 3 botón plano azul petróleo (`#1D4D5F`, texto `#F4F1EA`): *«Ver comparativa de peso y puertos»* con `[TONE]` y `[BRAND VOICE]` orientados a `[AUDIENCE]`.
+  >
+  > **Prompt visual base (referencia fotográfica sin texto):**
+  > `Asymmetric horizontal tabletop photograph on a natural light oak workbench lit by soft side window daylight, left 30 percent showing a real tangled bundle of old worn adapters and cables, right 70 percent with generous clean empty wood space holding a single compact matte anodized device, consistent natural lighting across the whole scene, subtle 50mm lens depth of field, honest physical materials.`
+  > **Negativos anti-IA:** `50/50 split screen with glowing lightning bolt, sad grayscale vs neon future, glowing blue hologram, floating 3d arrows, HDR over-saturation, plastic studio background, rocket icon, centered symmetrical comparison, gibberish text.` *(Sensibilidad variable según motor `[uncertain]`).*
